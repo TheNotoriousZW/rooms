@@ -1,0 +1,3 @@
+text = text-stone-300
+
+bold text = font-bold text-stone-900
