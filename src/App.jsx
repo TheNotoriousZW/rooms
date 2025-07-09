@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Messages from './pages/Messages'
 import Teams from './pages/Teams'
+import './index.css'
 
 
 const router = createBrowserRouter([
