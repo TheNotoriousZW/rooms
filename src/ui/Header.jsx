@@ -4,7 +4,7 @@ import ProjectsIcon from "../icons/ProjectsIcon"
 export default function Header() {
 
     return(
-        <div className="flex flex-row border-stone-300 bg-stone-100 fixed border-b-2 
+        <div className="flex flex-row border-stone-300 font-bold fixed border-b-2 
         pl-10 h-12 fixed top-0 w-full bg-base-200 items-center justify-around">
             <div className="flex flex-row items-center space-x-2">
             <FeatureIcon lable="home" path="/">

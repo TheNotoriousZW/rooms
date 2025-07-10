@@ -1,3 +1,5 @@
 text = text-stone-300
 
 bold text = font-bold text-stone-900
+
+action = bordrer-blue-400  bg-blue-300

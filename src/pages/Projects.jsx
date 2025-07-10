@@ -38,22 +38,43 @@ export default function Projects(){
         </div>
 
         <div className="border w-screen border-stone-200 flex flex-col pt-14 justify-center items-center">
-            <div className="flex flex-col border border-stone-200">
-                <p>New Feature</p>
+            <div className="flex flex-col items-center p-4 rounded-md border border-stone-200">
+                <p className="text-stone-900 font-bold">New Action</p>
+                <div className="flex flex-col">
+                    <p className="text-stone-500">Create and assign a new action to the project</p>
+                </div>
+                <button className="btn mt-4">Create Action</button>
             </div>
+
+            <div className="flex flex-row w-1/2 items-center mt-3 space-x-16 ">
+                 <div className="flex flex-col border border-stone-200 rounded-md p-4 w-1/3">
+                     <p>project time tracking</p>
+                     <p>calendar kind of object</p>
+                 </div>
+                 <div className="flex flex-col border border-stone-200 rounded-md p-4 w-1/3">
+                    <p>project members activity</p>
+                    <p>list of members and their activity</p>
+                 </div>
+                 <div className="flex flex-col border border-stone-200 rounded-md p-6 w-1/3">
+                    <p>blockers</p>
+                    <p>list of blockers and raised concerns</p>
+                    <p>can be raised by members or by the project leader</p>
+                 </div>
+            </div>
+
             <div className="flex flex-col 
                             justify-center 
                             divide-stone-200
                             border-2
                             border-dashed
                             border-stone-200
-                            text-center items-center relative border m-auto rounded-md w-1/2 h-1/4">
+                            text-center items-center relative border m-16 rounded-md w-1/2 h-1/4">
                 <div className="flex flex-row items-center absolute border-b-2 border-stone-200 top-4 text-stone-900 font-bold">
                     Submit Project Information
                 </div>
                 <div className="flex flex-col">
                     <div className="flex flex-row items-center pl-18">
-                    <label htmlFor="projectResource" className="text-stone-300 font-bold ">New Resource</label>
+                    <label htmlFor="projectResource" className="text-stone-300  ">New Resource</label>
                     <FeatureIcon lable="submit" path="/projects">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-4">
                         <path d="M7.25 10.25a.75.75 0 0 0 1.5 0V4.56l2.22 2.22a.75.75 0 1 0 1.06-1.06l-3.5-3.5a.75.75 0 0 0-1.06 0l-3.5 3.5a.75.75 0 0 0 1.06 1.06l2.22-2.22v5.69Z" />
