@@ -6,11 +6,11 @@ export default function AppLayout() {
     return (
         <div className="flex relative top-0 overflow-hidden flex-col h-screen">
             <Header />
-            <div className="flex flex-1 relative">
+            <div className="flex flex-grow relative">
                 <div className="absolute left-0 top-0 h-full z-10">
                     <Navbar />
                 </div>
-                <main className="flex-1 flex items-center p-6  transition-all duration-300">
+                <main className="flex items-center p-6 transition-all duration-300">
                     <div className="max-w-4xl">
                         <Outlet />
                     </div>
