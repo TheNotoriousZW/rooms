@@ -42,12 +42,12 @@ export default function Actions(){
                         <li key={action.id}
                        >
                             <div>
-                                <p>{action.name}</p>
+                                {/* <p>{action.name}</p>
                                 <FeatureIcon lable="action" path="/actions">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-4">
                                     <path fillRule="evenodd" d="M9.58 1.077a.75.75 0 0 1 .405.82L9.165 6h4.085a.75.75 0 0 1 .567 1.241l-6.5 7.5a.75.75 0 0 1-1.302-.638L6.835 10H2.75a.75.75 0 0 1-.567-1.241l6.5-7.5a.75.75 0 0 1 .897-.182Z" clipRule="evenodd" />
                                   </svg>
-                                </FeatureIcon>
+                                </FeatureIcon> */}
                                 {action.name}</div>
                                 <div className="flex flex-row items-center justify-between pr-3">
                                     <p>details</p>
@@ -58,12 +58,11 @@ export default function Actions(){
                                     </FeatureIcon>
                                     </div>
                                 
-                            </div>
+                            
                         </li>
                     )
                 })}
-               </ul>
-           </div>
+            </ul>
         </div>
     </div>
     )
