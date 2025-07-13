@@ -13,9 +13,9 @@ export default function Navbar() {
 
     return(
            <div 
-             className="flex flex-col items-center justify-center border-b border-stone-300 py-6"
+             className="flex flex-col items-center justify-center border-b-2 border-stone-300 py-6"
            >
-             <div>
+             <div className="flex sm:flex-col flex-row items-start justify-start pr-2 gap-2">
                 <FeatureIcon navOpen={navOpen} lable="teams" nav={navOpen} path="/teams" navbaricon={true}>
                     <UsersIcon />
                 </FeatureIcon>
