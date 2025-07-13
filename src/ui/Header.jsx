@@ -4,9 +4,9 @@ import ProjectsIcon from "../icons/ProjectsIcon"
 export default function Header() {
 
     return(
-        <div className="flex flex-row border-stone-300 font-bold fixed border-b-2 
-        pl-10 h-12 fixed top-0 w-full bg-base-200 items-center justify-around">
-            <div className="flex flex-row items-center space-x-2">
+        <div className="flex items-center justify-between pr-6 pl-6"
+        >
+            <div className="flex items-center ">
             <FeatureIcon lable="home" path="/">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                 <path d="M15.75 8.25a.75.75 0 0 1 .75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 1 1-.992-1.124A2.243 2.243 0 0 0 15 9a.75.75 0 0 1 .75-.75Z" />
@@ -16,13 +16,13 @@ export default function Header() {
             <p>User / Team</p>
             </div>
 
-            <div className="flex flex-row items-center">
-                <FeatureIcon lable="current project" path="/current-project">
+            <div className="flex items-center">
+                <FeatureIcon lable="current project" path="/">
                       <ProjectsIcon />          
                 </FeatureIcon>
                 <p>{"<current project>"}</p>
 
-                <FeatureIcon lable="current project" path="/current-project">
+                <FeatureIcon lable="current project" path="/">
                 </FeatureIcon>
             </div>
 

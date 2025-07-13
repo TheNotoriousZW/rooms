@@ -34,14 +34,14 @@ export default function Actions(){
     ]
     return(
 
-        <div className="flex flex-col w-screen  text-stone-500">
-            <div className="w-full flex items-center justify-center border border-stone-200">
+        <div>
+            <div>
                <ul>
                 {actions.map(action => {
                     return(
-                        <li key={action.id} className="flex flex border-2 
-                        border-blue-400 font-medium text-stone-500 bg-blue-300 shadow-lg rounded-md  space-x-4 m-6">
-                            <div className="flex p-2 w-140 items-center ">
+                        <li key={action.id}
+                       >
+                            <div>
                                 <p>{action.name}</p>
                                 <FeatureIcon lable="action" path="/actions">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-4">

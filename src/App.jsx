@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AppLayout from './ui/AppLayout'
 import Actions from './pages/Actions'
@@ -7,6 +7,7 @@ import Projects from './pages/Projects'
 import Messages from './pages/Messages'
 import Teams from './pages/Teams'
 import './index.css'
+import { NavProvider } from './context/NavProvider'
 
 
 const router = createBrowserRouter([
@@ -43,8 +44,9 @@ function App() {
   
 
   return (
-   
+    <NavProvider>
       <RouterProvider router={router} />
+    </NavProvider>
     
   )
 }
