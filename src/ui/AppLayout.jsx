@@ -21,12 +21,12 @@ export default function AppLayout() {
                <Header />
             </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-30  ">
-              <div className={` md:h-screen ${navOpen ? "col-span-5" : "col-span-1"} border-r border-stone-300`}
+              <div className={` md:h-screen ${navOpen ? "col-span-4" : "col-span-1"} border-r border-stone-300`}
                 onMouseEnter={() => handleNavOnMouseEnter()} 
                 onMouseLeave={() => handleNavOnMouseLeave()} >
                   <Navbar />
               </div>
-               <div className={` md:h-screen ${navOpen ? "col-span-25" : "col-span-29"}`}>
+               <div className={` md:h-screen ${navOpen ? "col-span-26" : "col-span-29"}`}>
                   <Outlet />
               </div>
             </div>
