@@ -1,13 +1,14 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AppLayout from './ui/AppLayout'
-import Actions from './pages/Actions'
+import Actions from './pages/action/Actions'
 import Home from './pages/Home'
-import Projects from './pages/Projects'
-import Messages from './pages/Messages'
-import Teams from './pages/Teams'
+import Projects from './pages/project/Projects'
+import Messages from './pages/messages/Messages'
+import Teams from './pages/teams/Teams'
 import './index.css'
 import { NavProvider } from './context/NavProvider'
+import CreateProject from './pages/project/CreateProject'
 
 
 const router = createBrowserRouter([
@@ -25,7 +26,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <Projects />
+        element: <Projects />,
+        children: [
+          {
+            path: "/projects/create",
+            element: <CreateProject />
+          }
+        ]
       },
       {
         path: "/messages",

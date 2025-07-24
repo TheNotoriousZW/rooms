@@ -1,4 +1,4 @@
-import FeatureIcon from "../icons/FeatureIcon"
+import FeatureIcon from "../../icons/FeatureIcon"
 export default function Actions(){
 
     const actions = [

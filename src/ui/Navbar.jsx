@@ -20,7 +20,7 @@ export default function Navbar() {
                     <UsersIcon />
                 </FeatureIcon>
 
-               <FeatureIcon navOpen={navOpen} lable="projects" nav={navOpen} path="/projects" navbaricon={true}>
+               <FeatureIcon navOpen={navOpen} lable="projects" nav={navOpen} path={"/projects/create"} navbaricon={true}>
                     <ProjectsIcon />
                </FeatureIcon>
             
