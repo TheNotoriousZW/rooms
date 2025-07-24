@@ -8,7 +8,7 @@ import Messages from './pages/messages/Messages'
 import Teams from './pages/teams/Teams'
 import './index.css'
 import { NavProvider } from './context/NavProvider'
-import CreateProject from './pages/project/CreateProject'
+import ProjectsHome from './pages/project/ProjectsHome'
 
 
 const router = createBrowserRouter([
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
         element: <Projects />,
         children: [
           {
-            path: "/projects/create",
-            element: <CreateProject />
+            path: "/projects/home",
+            element: <ProjectsHome />
           }
         ]
       },
