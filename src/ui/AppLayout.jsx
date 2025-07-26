@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import { Outlet } from "react-router-dom"
 import { useNav } from "../context/NavProvider"
 
+
 export default function AppLayout() {
     const {navOpen, setNavOpen} = useNav();
 

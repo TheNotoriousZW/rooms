@@ -9,6 +9,7 @@ import Teams from './pages/teams/Teams'
 import './index.css'
 import { NavProvider } from './context/NavProvider'
 import ProjectsHome from './pages/project/ProjectsHome'
+import { ProjectProvider } from './context/ProjectProvider'
 
 
 const router = createBrowserRouter([
@@ -51,9 +52,11 @@ function App() {
   
 
   return (
-    <NavProvider>
-      <RouterProvider router={router} />
-    </NavProvider>
+    <ProjectProvider>
+      <NavProvider>
+        <RouterProvider router={router} />
+      </NavProvider>
+    </ProjectProvider>
     
   )
 }
