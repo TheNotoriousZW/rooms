@@ -22,7 +22,7 @@ export default function AppLayout() {
                <Header />
             </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-30  ">
-              <div className={` md:h-screen ${navOpen ? "col-span-4" : "col-span-1"} border-r border-stone-300`}
+              <div className={` md:h-screen ${navOpen ? "col-span-4" : "col-span-1"} `}
                 onMouseEnter={() => handleNavOnMouseEnter()} 
                 onMouseLeave={() => handleNavOnMouseLeave()} >
                   <Navbar />

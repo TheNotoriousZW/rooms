@@ -1,7 +1,7 @@
 import UsersIcon from '../icons/UsersIcon';
 import ProjectsIcon from '../icons/ProjectsIcon';
 import MessagesIcon from '../icons/MessagesIcon';
-import ActionIcon from '../icons/ActionIcon';
+import BranchIcon from '../icons/BranchIcon';
 import FeatureIcon from '../icons/FeatureIcon';
 import { useNav } from '../context/NavProvider';    
 
@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return(
            <div 
-             className="flex flex-col items-center justify-center border-b-2 border-stone-300 py-6"
+             className="flex flex-col items-center justify-center  border-stone-300 py-6"
            >
              <div className="flex sm:flex-col flex-row items-start justify-start gap-2">
                 <FeatureIcon navOpen={navOpen} lable="teams" nav={navOpen} path="/teams" navbaricon={true}>
@@ -28,8 +28,8 @@ export default function Navbar() {
                     <MessagesIcon   />
                 </FeatureIcon>
             
-                <FeatureIcon navOpen={navOpen} lable="actions" nav={navOpen} path="/actions" navbaricon={true}>
-                    <ActionIcon />
+                <FeatureIcon navOpen={navOpen} lable="branches" nav={navOpen} path="/actions" navbaricon={true}>
+                    <BranchIcon />
                 </FeatureIcon>
            </div> 
        </div>

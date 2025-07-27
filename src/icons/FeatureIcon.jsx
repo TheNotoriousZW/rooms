@@ -12,8 +12,9 @@ export default function FeatureIcon({ children, lable, nav, path, navbaricon}){
         <div 
         onClick={() => navigate(path)}
         className={`flex flex-row transition-ease-in-out 
-            duration-200 ${navbaricon ? "active:bg-stone-300" : ""} items-center text-stone-500 
+            duration-200 ${navbaricon ? "active:bg-stone-300" : ""} text-stone-500 
             space-x-2  ${navbaricon ? "hover:bg-stone-100 rounded-sm p-2" : ""}
+            ${navbaricon ? "hover:bg-stone-100 rounded-sm p-2" : ""}
             ${pathname === path && navbaricon ? "rounded-sm" : ""}  
             p-2 ${pathname === path && navbaricon ? 'bg-stone-200' : ''}
             ${pathname === path && navbaricon ? 'font-bold text-stone-900' : ''}`}>

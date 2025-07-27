@@ -1,7 +1,6 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AppLayout from './ui/AppLayout'
-import Actions from './pages/action/Actions'
 import Home from './pages/Home'
 import Projects from './pages/project/Projects'
 import Messages from './pages/messages/Messages'
@@ -10,6 +9,7 @@ import './index.css'
 import { NavProvider } from './context/NavProvider'
 import ProjectsHome from './pages/project/ProjectsHome'
 import { ProjectProvider } from './context/ProjectProvider'
+import Branches from './pages/branches/Branches'
 
 
 const router = createBrowserRouter([
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/actions",
-        element: <Actions />
+        element: <Branches />
       },
       {
         path: "/",

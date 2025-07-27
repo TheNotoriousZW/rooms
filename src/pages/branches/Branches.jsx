@@ -1,5 +1,5 @@
 import FeatureIcon from "../../icons/FeatureIcon"
-export default function Actions(){
+export default function Branches(){
 
     const actions = [
         {
